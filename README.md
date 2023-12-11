@@ -1,12 +1,12 @@
 # myresume
-This hands-on was inspired by tinytechnicaltutorials...all thanks to her (Amber)
+This resume was inspired by tinytechnicaltutorials...all thanks to her (Amber)
 
-I basically followed the steps highlighted in her YouTube videos to create the resume as a webpage.
+I basically followed the steps highlighted in her YouTube videos to create the resume as an interactive website. The resume was created during my training as AWS Solutions Architect (Dec 2023)
 
-This resume was created during my training as AWS Solutions Architect
+The resume uses HTML, CSS and Javascript (all copied and edited LOL. I was yet to learn coding). The files were uploaded on S3 Bucket that I configured with static website hosting (definitely with public access).
 
-The resume uses HTML, CSS and Javascript (all copied and edited). The files were uploaded on S3 that I configured with static website hosting with public access.
+The S3 static website endpoint was initially used as endpoint under Route 53 (Alias option) just to test it before attaching certificate. 
 
-The S3 static website endpoint is then used under Alias in Route 53. 
+Finally, I generated an SSL/TLS generated from AWS Certificate Manager (ACM) and also created a CloudFront Distribution. The certifcate was attached to the CF Distribution.
 
-Finally, an SSL/TLS generated from AWS Certificate Manager (ACM) was attached to CloudFront Distribution (which later became the endpoint for the Route 53).
+Finally, the initial S3 Static website endpoint was replaced with the created CF Distribution DNS endpoint on Route 53.
