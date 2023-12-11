@@ -7,6 +7,6 @@ The resume uses HTML, CSS and Javascript (all copied and edited LOL. I was yet t
 
 The S3 static website endpoint was initially used as endpoint under Route 53 (Alias option) just to test it before attaching certificate. 
 
-Finally, I generated an SSL/TLS generated from AWS Certificate Manager (ACM) and also created a CloudFront Distribution. The certifcate was attached to the CF Distribution.
+Additionally, I generated an SSL/TLS generated from AWS Certificate Manager (ACM) and also created a CloudFront Distribution. The certifcate was attached to the CF Distribution.
 
 Finally, the initial S3 Static website endpoint was replaced with the created CF Distribution DNS endpoint on Route 53.
